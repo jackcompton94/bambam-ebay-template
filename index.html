@@ -1,0 +1,126 @@
+<style type="text/css">
+	/* Put any CSS declarations here. */
+	#pinnacleItemWrap {
+		margin: 20px;
+		padding: 20px;
+		border: 2px black solid;
+		background-color: #eee;
+		/* In this we use a background image from a data URL.  It is better to use an external hosting provider for your style images. */
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAE1ElEQVRo3o1ZWZajQAyT6nH/i84dUH+wlBeZTOd1QiCUXV5k2fCfhAUA4P0SCAJY9yfud7zHTGcEve+43/dZhPMCcIZvBHDoFhlPCwBxBpW2eKXvKKqhXOUr+JGwoFvede3g+4PLEnx3sI/ibtlE1t/EFRG2tjewrwmLQff+p2LSbnC1exXEPd/4KsHbgXwdDYYFGHRHEOKE444WFZXrcRa+P6//Y0fAl3FpnCAjVh/XohS9KhzVfAxCOCyCN1Oc2G0tJt8rWfr55WJIiRoN0QU1raJD2ParZofsgK3IcSUGQ45XHWtYLsTUzcmn8s9mu/q3+HkZLcCYDC6DBRxCEs0efBTI++eQVvWdxtgahNbk2zJXvkXFoEohhZLh+UhDHmyPr1uJ9QL+C0Q+uGQgCAELBOFs6j/qVmjmrUQOyIMATmN6BzIxCJEqSDe5Sk45xNWlkJo3nxyWLTdKNU4WvjYM6yMkF3hBMcMtv1FRBaq7Mmy5o2SRaI2FBA9MuKUEUrBg5aDWAbOSPbYKa8dlxihv2Anv8047ivb7nlUPjAJVjipGMuCBbBmvK5yBCyBmAQpdkEkgWnswgRIsF0LJmUhJVKthZDPCLlQsJadCjawdmHBTZZXr6FgFCdmMvnOarWA7AFaDtpw1DHZJLsg7rVUSzePd/2zs8CuOtAkJW2QzFRuOLNjRMSX8VyGn2Z6vBWg4b8RsNcItiwK5QMm4UWHNtdOwBxkLparxUSnHFIA9i6Ia3C7o/H0ioxGwVZoZtFU0QBs3I3owUA2Qp0LUE9HXTs8X8/HRRfDdE1PpmUoThmBVA1626CIOWlre8x+WAVR1J6iqHehe+3Dlk6YF6cxQtmPAmLK0tGSxXWSJ2IwKMi0qh+adQ2ZEXrBQ8ImWXlcaos+91vsZqEzrC/BR/x2zcT2ibIDurJJhQs9rzfpzpB69GkbM9Ijg+IbwTGca7XIVQR/TA9871Y64wtidBZ4w9Vb0t7N22srUSbRMEFaPgbpjmlh38aHUste+QKP7Fn7Es4Ys18fcDI2C+9wKI5rf3b2GQp1bta8s6tH0dkZ5juenfvxPvKukhoPNXhf0UaLM6JFDxOf2S2MxwhgRBwy2y859eE85I12RTT8vSiVEr8/DDVhyEdbn4AFD58g2T2Mi6M/x6h2/cP7EABWXdYNnWs5E6ePKC+Pi0fMySuTOgUP2wExg4nqHLO55ZPQLbuzjSHB7VX0oyvFVYFWs4BuyOuDUj2R9tnReQaiP/M79L8elNcD1jKOMOCALHp3Heyhlqu7ftbLWDlwWoGG0U2vGxBjVJu0cRpq0dmlQ7OhjnfByF5FkpU7nZLBRKYD1ZEEvISwLsbXV3iEVM/1cQWGKdnyVld6C1x6xh+Z3C5szi1Ad1U7PB/jaQGmc5Rs5DTN3+WKkVBxc8Pk05MiNKjxzGGadWA8SZt7PYfjKNulwpqZ5gsjyUDBYQO1ZYNbX9XN1srqxrTfn+Zd9dnQI510UZRhN7ZNhMY9mpo5hQFnPHbJPO2keMdXY4IB4HFlSr6y8FHAVzyFinPfD9D++lNdhZoaiQ3a01iOCbd4d4fQcHlp0J6mwp0P3DJdlzOJmBhya7nPIlBPuoaCCbbiLEdpnH6fIgqvM0wbdD8OFFbbXJ6zEH4WAF9nI2GZFAAAAAElFTkSuQmCC');
+		font-family: sans-serif;
+	}
+	#pinnacleItemWrap h1, #pinnacleItemWrap h2 {
+		margin: 0 0 20px 0;
+		padding: 0;
+		color: navy;
+		border-bottom: 1px navy solid;
+		font-variant: small-caps;
+	}
+	#pinnacleItemWrap p.pinnacleSeller {
+		font-size: 1.2em;
+		font-weight: bold;
+		color: navy;
+	}
+	td {
+    text-decoration: underline;
+  	}
+	.contact-container {
+    display: flex;
+    align-items: center;
+   }
+   .contact-info {
+    flex-grow: 1;
+   }
+   .contact-photo img {
+    max-width: 200px;
+   } 
+</style>
+
+<div id="pinnacleItemWrap">
+	<!-- all content is inside div#pinnacleItemWrap to make sure that your CSS does not conflict with ebay -->
+	<!-- You shouldn't change the item details area unless you're doing major style rework. -->
+	<h1><EXPANDEDMODELYEAR></h1>
+	
+	<h2>Item Details</h2>
+	<table>
+		<tr>
+			<th>Make: </th>
+			<td><MANUFACTURER></td>
+			
+			<th>Model: </th>
+			<td><MODEL></td>
+
+			<th>Year: </th>
+			<td><MODELYEAR></td>
+		</tr>
+
+		<tr>
+			<th>Light Description: </th>
+			<td><PARTCOMMENTS></td>
+
+			<th>Side: </th>
+			<td><input type="text" style="background: transparent; border: none; width: 80px"></td>
+		</tr>
+	</table>
+
+<div>
+<!--DO NOT EDIT THIS TEXT :START:IMAGESHTML-->
+<!--DO NOT EDIT THIS TEXT :END:IMAGESHTML-->
+</div>
+
+	<!-- You should adapt these generic T&Cs to your business -->
+	<h2>Conditions</h2>
+	<table>
+		<tr>
+			<th>Housing:</th>
+			<td><input type="text" style="background: transparent; border: none; width: 80px"></td>
+
+			<th>Lens:</th>
+			<td><input type="text" style="background: transparent; border: none; width: 80px"></td>
+		</tr>
+
+		<tr>
+			<th>Tabs:</th>
+			<td><input type="text" style="background: transparent; border: none; width: 80px"></td>
+
+			<th>Other:</th>
+			<td><input type="text" style="background: transparent; border: none; width: 80px"></td>
+		</tr>
+	</table>
+
+	<h2>Disclaimer</h2>
+	<p>
+		The light pictured is the light you will receive.<br/><br/>
+		Be sure to view all pictures to make sure the light is the correct one. It is important that you verify that you are buying the correct part for your vehicle.<br/><br/>
+		You, the buyer, are responsible for ordering the correct part. If you have any questions regarding the fitment of the light, please contact us.<br/><br/>
+	</p>
+
+	<h2>Shipping and Handling</h2>
+	<p>
+		Shipping of lights within 24 hours of payment processing.<br/><br/>
+		We use a foam packaging machine to professionally secure and protect our lights for shipping.<br/><br/>
+		Please notify us immediately if your light is damaged in shipping.<br/><br/>
+	</p>
+
+	<h2>Return Policy</h2>
+	<p>
+		Returns are accepted within 30 days. Buyer is responsible for return shipping and insurance.
+	</p>
+
+	<div class="contact-container">
+		<div class="contact-info">
+		  <h2>Contact Information</h2>
+		  <p>
+			303 Water St<br>
+			Wadsworth, Ohio 44281
+		  </p>
+		  <p><strong>Phone:</strong> +1 (833) 903-2227</p>
+		  <p><strong>Email:</strong> sales@bambam.parts</p>
+		  <p><strong>Website:</strong> <a href="http://www.bambam.parts">www.bambam.parts</a></p>
+		</div>
+		<div class="contact-photo">
+		  <img src="path/to/your/photo.jpg" alt="Photo">
+		</div>
+	  </div>
+	  
+</div>
